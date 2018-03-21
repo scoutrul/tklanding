@@ -1,0 +1,13 @@
+//- includes/header.jade
+header.container-fluid.d-flex.flex-row.align-items-center
+	.container.d-flex.flex-row.align-items-center.justify-content-between.header_items
+		.flex.header_items_menu
+			include ./menu.jade 
+		.col.flex.header_items_logo
+			.logo 
+				img(src="images/logo_1.svg", alt="")
+		.col.flex.d-flex.flex-row.justify-content-end.header_items_search
+			.search
+				img(src="images/search.svg", alt="")
+		.flex.d-flex.flex-row.justify-content-end.header_items_local
+			.local Eng

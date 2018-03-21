@@ -1,0 +1,21 @@
+footer {
+	width: 100%;
+	min-height: 250px;
+	background-color: #222222;
+	.info {
+		margin: auto 0;
+		font-size: 12px;
+		line-height: 130%;
+		color: #ffffff;
+		font-weight: 300;
+		a {
+			color: #f03333;
+		}
+	}
+	.header,
+	.copyright {
+		white-space: nowrap;
+		line-height: 80px;
+		min-height: 80px;
+	}
+}
