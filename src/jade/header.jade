@@ -1,13 +1,11 @@
 //- includes/header.jade
 header.container-fluid.d-flex.flex-row.align-items-center
 	.container.d-flex.flex-row.align-items-center.justify-content-between.header_items
-		.flex.header_items_menu
-			include ./menu.jade 
-		.col.flex.header_items_logo
-			.logo 
-				img(src="images/logo_1.svg", alt="")
-		.col.flex.d-flex.flex-row.justify-content-end.header_items_search
-			.search
-				img(src="images/search.svg", alt="")
-		.flex.d-flex.flex-row.justify-content-end.header_items_local
-			.local Eng
+		.col-2.flex.header_items_logo
+			.logo T
+		.col-8
+			ul.header_nav
+				each link in header_nav
+						li= link.title
+		.col-2
+			include ./get_app.jade

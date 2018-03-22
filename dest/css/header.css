@@ -72,53 +72,28 @@ h6 {
   font-weight: 600; }
 
 header {
+  position: fixed !important;
+  z-index: 10;
+  width: 100%;
   min-height: 80px;
-  height: 80px;
-  width: 100%; }
-  header .flex {
-    flex: 1 auto; }
-  header .local {
-    color: #f03333;
-    font-size: 15px; }
-  header .header_items .header_items_logo {
-    order: -1;
-    flex: 0; }
-  header .header_items .header_items_local,
-  header .header_items .header_items_search {
-    flex: 0; }
-  header .header_items .header_items_menu .burger {
-    display: none; }
-  header .header_items .header_items_menu .nav {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 18px;
-    color: #222;
+  height: 80px; }
+  header .logo {
     display: flex;
-    justify-content: space-between; }
-    header .header_items .header_items_menu .nav li {
-      position: relative;
-      margin-right: 10px; }
-      header .header_items .header_items_menu .nav li:after {
-        content: '';
-        position: absolute;
-        right: -15px;
-        top: 5px;
-        width: 0;
-        height: 0;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 9px solid #e5e5e5; }
-      header .header_items .header_items_menu .nav li:first-child:after {
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 9px solid #f03333; }
-  @media (max-width: 991.98px) {
-    header .header_items .header_items_local,
-    header .header_items .header_items_search {
-      flex: 1 auto; }
-    header .header_items .header_items_menu {
-      order: -2; }
-      header .header_items .header_items_menu .nav {
-        display: none; }
-      header .header_items .header_items_menu .burger {
-        display: block; } }
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #115ffe;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 600; }
+  header .header_nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; }
+    header .header_nav li {
+      margin-right: 30px; }

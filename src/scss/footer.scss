@@ -1,21 +1,32 @@
+@import 'vars.scss'; 
 footer {
+	display: flex;
+	justify-content: center;
 	width: 100%;
-	min-height: 250px;
-	background-color: #222222;
-	.info {
-		margin: auto 0;
-		font-size: 12px;
-		line-height: 130%;
-		color: #ffffff;
-		font-weight: 300;
-		a {
-			color: #f03333;
+	min-height: 500px;
+	background-image: url(/images/bg_2_1.jpg);
+    background-size: cover;
+	background-position: center bottom;
+	.container {
+		display: flex;
+		justify-content: center;
+		justify-content: space-between;
+		align-items: center;
+		margin: $hPadding 0;
+		flex-direction: column;
+		.footer_nav {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			max-width: 600px;
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style: none;
+			li {
+				margin: auto;
+				color: $blue;
+			}
 		}
-	}
-	.header,
-	.copyright {
-		white-space: nowrap;
-		line-height: 80px;
-		min-height: 80px;
 	}
 }

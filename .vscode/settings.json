@@ -1,0 +1,27 @@
+{
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "window.zoomLevel": 1,
+    "auto-close-tag.enableAutoCloseTag": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.renderIndentGuides": false,
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "svgpreview.singletonmode": true,
+    "postcssSorting.config": {
+        "order": [
+            "custom-properties",
+            "dollar-variables",
+            "declarations",
+            "at-rules",
+            "rules"
+        ],
+        "properties-order": [
+            "position", "top", "right", "bottom", "left", 
+            "display", "flex", "justify-content", "align-items",
+            "width", "min-width", "max-width", "min-height", "max-height", "height", "line-height", 
+            "padding", "margin"]
+        }
+}
