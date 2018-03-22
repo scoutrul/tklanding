@@ -1,57 +1,8 @@
 @import 'vars.scss'; 
 .content {
 	margin: auto 0;
-
-	.hero {
-		background-size: cover;
-		justify-content: center;
-		display: flex;
-		min-height: 100vh;
-		padding: $hPadding 0;
-		background-image: url('../images/bg_1_1.jpg');
-		background-attachment: fixed;
-		background-position: center;
-		.container {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			align-items: center;
-		
-			.header_1 {
-				margin: auto 0 0;
-				color: $white;
-				text-transform: uppercase;
-				.box {
-					position: relative;
-					.over {
-						z-index: 2;
-						position: relative;
-					}
-					.under:after {
-						content: '';
-						position: absolute;
-						bottom: 10px;
-						left: 0;
-						border: 20px solid #115ffe;
-						width: 102%;
-					}
-				}
-			}
-			.header_2 {
-				color: $grey;
-				margin: 20px 0;
-			}
-			.scroll {   
-				margin: auto 0 0;
-				display: flex;
-				flex-flow: column wrap;
-				img {
-					margin: 16px 0;
-				}
-			}
-		}
-	}
-	
+	padding: 0;
+	@import 'hero.scss';
 	.main {
 		display: flex;
 		flex-flow: column wrap;

@@ -5,30 +5,46 @@ var jade = require('gulp-jade');
 var plumber = require('gulp-plumber');
 var data = require('gulp-data');
 var fs = require('fs');
+var postcss = require('gulp-postcss');
+var notify = require('gulp-notify');
+var autoprefixer = require('gulp-autoprefixer');
+var cssnano = require('cssnano');
+var concat = require('gulp-concat');
 
 var paths = {
 	sass: 'src/scss/*.scss',
 	js: 'src/js/*.js',
-	data: './data.json',
+	data: 'data.json',
 	jade: 'src/jade/index.jade'
 };
+
+var processors = [autoprefixer({
+	browsers: [ '> 5% in US' ]
+}), require('postcss-focus'), cssnano ];
+
+gulp.task('sass', function() {
+	return (gulp
+			.src('./src/scss/index.scss')
+			.pipe(sass())
+			.pipe(plumber({ errorHandler: notify.onError('Error: sass') }))
+			// .pipe(concat('styles.css'))
+			.pipe(postcss(processors))
+			.pipe(gulp.dest('dest/css'))
+			.pipe(browserSync.stream()) );
+});
 
 gulp.task('jade', function() {
 	return gulp
 		.src(paths.jade)
+		.pipe(plumber({ errorHandler: notify.onError('Error: jade') }))
 		.pipe(
 			data(function(file) {
 				return JSON.parse(fs.readFileSync(paths.data));
 			})
 		)
 		.pipe(jade())
-		.pipe(plumber())
 		.pipe(gulp.dest('dest'))
 		.pipe(browserSync.stream());
-});
-
-gulp.task('sass', function() {
-	return gulp.src(paths.sass).pipe(sass()).pipe(plumber()).pipe(gulp.dest('dest/css')).pipe(browserSync.stream());
 });
 
 gulp.task('js', function() {

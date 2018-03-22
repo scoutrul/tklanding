@@ -1,11 +1,9 @@
 //- includes/header.jade
 header.container-fluid.d-flex.flex-row.align-items-center
 	.container.d-flex.flex-row.align-items-center.justify-content-between.header_items
-		.col-2.flex.header_items_logo
+		.flex.header_items_logo
 			.logo T
-		.col-8
-			ul.header_nav
+		ul.header_nav
 				each link in header_nav
 						li= link.title
-		.col-2
-			include ./get_app.jade
+		include ./get_app.jade
