@@ -76,7 +76,7 @@ footer {
   justify-content: center;
   width: 100%;
   min-height: 500px;
-  background-image: url(/images/bg_2_1.jpg);
+  background-image: url("../images/bg_2_1.jpg");
   background-size: cover;
   background-position: center bottom; }
   footer .container {
