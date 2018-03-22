@@ -1,8 +1,17 @@
 //- includes/hero.jade
 .hero
 	.container
-		h1 Play the sport <br/> you love
-		h6 Amateur sports gamification platform.
+		h1.header_1 
+			span.box
+				span.over Play
+				span.under
+
+			span &nbsp;the sport <br/> you&nbsp;
+			span.box
+				span.over love
+				span.under
+
+		h5.header_2 Amateur sports gamification platform.
 		include get_app.jade
 		.scroll
 			img(src="/images/icon_scroll.svg")
