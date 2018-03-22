@@ -8,7 +8,7 @@
 		display: flex;
 		min-height: 100vh;
 		padding: $hPadding 0;
-		background-image: url(/images/bg_1_1.jpg);
+		background-image: url('/images/bg_1_1.jpg');
 		background-attachment: fixed;
 		background-position: center;
 		.container {
@@ -68,7 +68,7 @@
 				width: 440px;
 			}
 			.right {
-				background-image: url(../images/pic_1_1.png);
+				background-image: url('../images/pic_1_1.png');
 				height: 100vh;
 				background-position: center;
 			}

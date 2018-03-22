@@ -6242,7 +6242,7 @@ h6 {
     display: flex;
     min-height: 100vh;
     padding: 80px 0;
-    background-image: url(/images/bg_1_1.jpg);
+    background-image: url("/images/bg_1_1.jpg");
     background-attachment: fixed;
     background-position: center; }
     .content .hero .container {
@@ -6290,7 +6290,7 @@ h6 {
         padding: 0 80px;
         width: 440px; }
       .content .main .container .right {
-        background-image: url(../images/pic_1_1.png);
+        background-image: url("../images/pic_1_1.png");
         height: 100vh;
         background-position: center; }
 
