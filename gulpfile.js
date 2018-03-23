@@ -18,9 +18,7 @@ var paths = {
 	jade: 'src/jade/index.jade'
 };
 
-var processors = [autoprefixer({
-	browsers: [ '> 5% in US' ]
-}), require('postcss-focus'), cssnano ];
+var processors = [require('postcss-focus'), cssnano ];
 
 gulp.task('sass', function() {
 	return (gulp
