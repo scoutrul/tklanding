@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: center;
 	min-height: 100vh;
-	padding: $hPadding 0;
+	padding: var(--hPadding) 0;
 	background-size: cover;
 	background-image: url('../images/bg_1_1.jpg');
 	background-attachment: fixed;
@@ -13,6 +13,10 @@
 		align-items: center;
 		flex-direction: column;
 		text-align: center;
+		@media (max-height: 370px) {
+			align-self: center;
+		}
+
 
 		.header_1 {
 			line-height: 100%;
@@ -22,6 +26,11 @@
 			@media ($XL) {
 				max-width: 1000px;
 			}
+			@media (max-width: 570px) and (max-height: 570px) {
+				margin-top: 100px;
+				font-size: 35px;
+			}
+
 			.box {
 				position: relative;
 				.over {
@@ -40,9 +49,18 @@
 			}
 		}
 		.header_2 {
+			line-height: 150%;
 			margin: 50px 0 80px;
 			font-weight: 400;
 			color: #fff;
+			@media ($S) {
+				margin: 30px 0;
+			}
+		}
+		.button {
+			@media (max-height: 470px) {
+				display: none !important;
+			}
 		}
 		.scroll {
 			display: flex;
@@ -50,8 +68,10 @@
 			flex-flow: column wrap;
 			color: $blue;
 			font-size: 13px;
-			img {
+			min-height: 85px;
+			.icon {
 				margin: 16px 0;
+				height: 45px;
 			}
 		}
 	}

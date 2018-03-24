@@ -6,21 +6,18 @@ header {
 	height: 80px;
 	margin-top: 60px;
 	z-index: 10;
+	@media ($S) {
+		margin: 10px;
+		padding: 0 !important;
+	}
 	.container {
 		@media ($M) {
 			width: 100%;
+			padding: 10px !important;
 		}
 		.logo {
-			display: flex;
-			justify-content: center;
-			align-items: center;
 			width: 65px;
 			height: 65px;
-			border-radius: 50%;
-			background-color: $blue;
-			color: #fff;
-			font-size: 200%;
-			font-weight: 600;
 		}
 		.header_nav {
 			display: flex;

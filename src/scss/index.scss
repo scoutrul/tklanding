@@ -20,7 +20,7 @@
 #app {
 	min-height: 100vh;
 	font-family: 'Graphik';
-	-webkit-font-display: 'block';
+	-webkit-font-display: block;
 	font-size: 12px;
 	font-weight: 400;
 	color: #9f9f9f;
@@ -29,7 +29,7 @@
 		@media ($XL) {
 			padding: 0;
 			.container {
-				padding: 0 80px;
+				padding: 0 var(--hPadding);
 			}
 		}
 	}
@@ -40,7 +40,8 @@
 	border-radius: 30px;
 	background-color: $blue;
 	color: #fff;
-	box-shadow: 0 5px 45px $blue;
+	box-shadow: 0 8px 16px rgba(17, 95, 254, 0.35);
+	min-height: 55px;
 	svg {
 		height: 35px;
 		fill: #fff;
@@ -61,6 +62,7 @@
 		--h4-size: 21px;
 		--h5-size: 19px;
 		--h6-size: 14px;
+		--hPadding: 80px;
 	}
 }
 @media ($L) {
@@ -71,6 +73,7 @@
 		--h4-size: 21px;
 		--h5-size: 19px;
 		--h6-size: 14px;
+		--hPadding: 80px;
 	}
 }
 @media ($M) {
@@ -91,6 +94,7 @@
 		--h4-size: 16px;
 		--h5-size: 14px;
 		--h6-size: 12px;
+		--hPadding: 20px;
 	}
 }
 @media ($XS) {
@@ -101,6 +105,7 @@
 		--h4-size: 14px;
 		--h5-size: 12px;
 		--h6-size: 11px;
+		--hPadding: 20px;
 	}
 }
 

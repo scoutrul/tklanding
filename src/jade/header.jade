@@ -2,9 +2,9 @@
 include ./button.jade
 header.container-fluid.d-flex.flex-row.align-items-center
 	.container.d-flex.flex-row.align-items-center.justify-content-between.header_items
-		.flex.header_items_logo
-			.logo T
-		ul.header_nav
+		.d-flex.w-100
+			img(src="images/icon_logo.svg").logo
+			ul.header_nav
 				each link in header_nav
 						li= link.title
 		+button('Get app')
