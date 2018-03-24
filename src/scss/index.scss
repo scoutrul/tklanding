@@ -1,20 +1,18 @@
 @import './bootsrap/bootstrap.scss';
-@import 'vars.scss'; 
-
+@import 'vars.scss';
 
 @font-face {
-	font-family: 'Graphik'; 
+	font-family: 'Graphik';
 	src: url('../fonts/Graphik-Bold.otf');
 	font-weight: 600;
 }
 @font-face {
-	font-family: 'Graphik'; 
-	src: 
-	url('../fonts/Graphik-Medium.otf');
-	font-weight: 500;;
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik-Medium.otf');
+	font-weight: 500;
 }
 @font-face {
-	font-family: 'Graphik'; 
+	font-family: 'Graphik';
 	src: url('../fonts/Graphik-Regular.otf');
 	font-weight: 400;
 }
@@ -22,24 +20,36 @@
 #app {
 	min-height: 100vh;
 	font-family: 'Graphik';
+	-webkit-font-display: 'block';
 	font-size: 12px;
 	font-weight: 400;
 	color: #9f9f9f;
+
+	.container-fluid {
+		@media ($XL) {
+			padding: 0;
+			.container {
+				padding: 0 80px;
+			}
+		}
+	}
 }
 
 .button {
-	width: 120px;
-	padding: 5px;
+	width: 180px;
 	border-radius: 30px;
 	background-color: $blue;
-	color: #FFF;
+	color: #fff;
 	box-shadow: 0 5px 45px $blue;
 	svg {
-		height: 15px;
-		fill: #FFF;
+		height: 35px;
+		fill: #fff;
 	}
 	span {
-		line-height: 30px;
+		line-height: 55px;
+		padding: 0 13px;
+		font-size: 17px;
+		white-space: nowrap;
 	}
 }
 //Headers
@@ -95,27 +105,27 @@
 }
 
 h1 {
+	line-height: 90%;
 	font-size: var(--h1-size);
 	font-weight: 600;
-	line-height: 90%;
 }
 
 h2 {
+	line-height: 90%;
 	font-size: var(--h2-size);
 	font-weight: 500;
-	line-height: 90%;
 }
 
 h3 {
+	line-height: 90%;
 	font-size: var(--h3-size);
 	font-weight: 500;
-	line-height: 90%;
 }
 
 h4 {
+	line-height: 180%;
 	font-size: var(--h4-size);
 	font-weight: 500;
-	line-height: 180%;
 }
 
 h5 {

@@ -1,4 +1,5 @@
 //- includes/hero.jade
+include button.jade
 .hero
 	.container
 		h1.header_1
@@ -12,7 +13,7 @@
 				span.under
 
 		h5.header_2 Amateur sports gamification platform.
-		include get_app.jade
+		+button('Get app')
 		.scroll
 			img(src="images/icon_scroll.svg")
 			span Scroll to learn more

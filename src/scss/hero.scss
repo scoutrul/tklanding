@@ -18,6 +18,9 @@
 			margin: auto 0 0;
 			color: $white;
 			text-transform: uppercase;
+			@media($XL) {
+				max-width: 1000px;
+			}
 			.box {
 				position: relative;
 				.over {

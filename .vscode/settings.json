@@ -22,6 +22,6 @@
             "position", "top", "right", "bottom", "left", 
             "display", "flex", "justify-content", "align-items",
             "width", "min-width", "max-width", "min-height", "max-height", "height", "line-height", 
-            "padding", "margin"]
+            "padding", "padding-top", "padding-right", "padding-bottom", "padding-left", "margin", "margin-top", "margin-right", "margin-bottom", "margin-left",]
         }
 }

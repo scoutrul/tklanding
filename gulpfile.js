@@ -12,7 +12,7 @@ var cssnano = require('cssnano');
 var concat = require('gulp-concat');
 
 var paths = {
-	sass: 'src/scss/*.scss',
+	sass: 'src/**/*.scss',
 	js: 'src/js/*.js',
 	data: 'data.json',
 	jade: 'src/jade/index.jade'
@@ -23,8 +23,8 @@ var processors = [require('postcss-focus'), cssnano ];
 gulp.task('sass', function() {
 	return (gulp
 			.src('./src/scss/index.scss')
-			.pipe(sass())
 			.pipe(plumber({ errorHandler: notify.onError('Error: sass') }))
+			.pipe(sass())
 			// .pipe(concat('styles.css'))
 			.pipe(postcss(processors))
 			.pipe(gulp.dest('dest/css'))

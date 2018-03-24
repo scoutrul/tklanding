@@ -1,19 +1,32 @@
-@import 'vars.scss'; 
+@import 'vars.scss';
 footer {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	min-height: 500px;
 	background-image: url('../images/bg_2_1.jpg');
-    background-size: cover;
+	background-size: cover;
 	background-position: center bottom;
+
 	.container {
 		display: flex;
-		justify-content: center;
-		justify-content: space-between;
 		align-items: center;
-		margin: $hPadding 0;
+		margin: 100px 0;
 		flex-direction: column;
+		text-align: center;
+		.header {
+			margin: auto auto 10px auto;
+			color: #fff;
+			font-weight: 400;
+		}
+		.slogan {
+			margin: 10px auto auto auto;
+			color: #fff;
+			font-weight: 400;
+		}
+		.button {
+			margin: 100px 0;
+		}
 		.footer_nav {
 			display: flex;
 			justify-content: space-around;
@@ -23,9 +36,11 @@ footer {
 			padding-left: 0;
 			margin-bottom: 0;
 			list-style: none;
+			margin: auto;
 			li {
 				margin: auto;
 				color: $blue;
+				font-size: 17px;
 			}
 		}
 	}

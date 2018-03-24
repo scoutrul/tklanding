@@ -1,9 +1,10 @@
 //- includes/footer.jade
+include button.jade
 footer.container-fluid
 	.container
-		h2 Get app for free
-		h6 And play the sports you love, when you want to play
-		include get_app.jade
+		h2.header Get app for free
+		h5.slogan And play the sports you love, when you want to play
+		+button('Get app')
 		
 		ul.footer_nav
 			each link in footer_nav
