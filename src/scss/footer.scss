@@ -11,6 +11,7 @@ footer {
 	.container {
 		display: flex;
 		align-items: center;
+		width: 100%;
 		margin: 100px 0;
 		flex-direction: column;
 		text-align: center;
@@ -34,12 +35,17 @@ footer {
 			width: 100%;
 			max-width: 600px;
 			padding-left: 0;
+			margin: auto;
 			margin-bottom: 0;
 			list-style: none;
-			margin: auto;
+			flex-flow: row wrap;
+			@media(max-width: 500px) {
+				flex-flow: column wrap;
+			}
 			li {
 				margin: auto;
-				color: $blue;
+				padding: 10px;
+				color: #115ffe;
 				font-size: 17px;
 			}
 		}
