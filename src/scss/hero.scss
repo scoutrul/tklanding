@@ -1,50 +1,52 @@
-@import 'vars.scss'; 
+@import 'vars.scss';
 .hero {
-	background-size: cover;
-	justify-content: center;
 	display: flex;
+	justify-content: center;
 	min-height: 100vh;
 	padding: $hPadding 0;
+	background-size: cover;
 	background-image: url('../images/bg_1_1.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	.container {
 		display: flex;
+		align-items: center;
 		flex-direction: column;
 		text-align: center;
-		align-items: center;
-	
+
 		.header_1 {
+			line-height: 100%;
 			margin: auto 0 0;
 			color: $white;
 			text-transform: uppercase;
-			@media($XL) {
+			@media ($XL) {
 				max-width: 1000px;
 			}
 			.box {
 				position: relative;
 				.over {
-					z-index: 2;
 					position: relative;
+					z-index: 2;
 				}
 				.under:after {
-					content: '';
 					position: absolute;
-					bottom: 5px;
+					bottom: 0;
 					left: 0;
 					width: 102%;
 					height: 40%;
+					content: '';
 					background: #115ffe;
 				}
 			}
 		}
 		.header_2 {
-			color: $grey;
-			margin: 20px 0;
+			margin: 50px 0 80px;
+			font-weight: 400;
+			color: #fff;
 		}
-		.scroll {   
-			margin: auto 0 0;
+		.scroll {
 			display: flex;
+			margin: auto 0 0;
 			flex-flow: column wrap;
 			color: $blue;
 			img {
