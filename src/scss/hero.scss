@@ -2,12 +2,14 @@
 .hero {
 	display: flex;
 	justify-content: center;
-	min-height: 90vh;
+	min-height: 100vh;
 	height: 100%;
 	padding: var(--hPadding) 0;
 	background-size: cover;
 	background-image: url('../images/bg_1_1.jpg');
-	background-attachment: fixed;
+	@media ($XL) {
+		background-attachment: fixed;
+	}
 	background-position: center;
 	z-index: 1;
 	.container {
@@ -17,7 +19,6 @@
 		flex-direction: column;
 		text-align: center;
 		align-self: center;
-		position: relative;
 
 		@media (min-width: 370px) and (min-height: 420px) {
 			padding-top: 120px;
@@ -89,7 +90,7 @@
 			@media ($L) {
 				margin: auto 0 60px;
 			}
-			@media (max-width: 700px) and (max-height: 900px){
+			@media (max-width: 700px) and (max-height: 900px) {
 				display: none;
 			}
 			@media ($XL) {
