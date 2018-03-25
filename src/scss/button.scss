@@ -1,0 +1,19 @@
+.button {
+	min-width: 180px;
+	width: 180px;
+	border-radius: 30px;
+	background-color: $blue;
+	color: #fff;
+	box-shadow: 0 8px 16px rgba(17, 95, 254, 0.35);
+	min-height: 55px;
+	svg {
+		height: 35px;
+		fill: #fff;
+	}
+	span {
+		line-height: 55px;
+		padding: 0 13px;
+		font-size: 17px;
+		white-space: nowrap;
+	}
+}

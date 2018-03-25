@@ -1,0 +1,14 @@
+@import 'vars.scss';
+section {
+	h2 {
+		font-weight: 400;
+		color: #000;
+		color: $space_grey
+	}
+	h5 {
+		font-weight: 400;
+		margin: 50px 0;
+		max-width: 410px;
+		color: $grey
+	}
+}

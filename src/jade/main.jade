@@ -1,15 +1,16 @@
 //- includes/main.jade
+include ./button.jade
 .main
-	.container.d-flex.flex-row
+	section.container.d-flex.flex-row
 		.left.col-6
 			h2.
 				Find sports meetups
 				nearby or create your
 				own
 
-			p.
+			h5.
 				Connect with like-minded individuals in your
 				vicinity. Use in-app chat to communicate &
 				organize games.
-
-		.right.col-6 pics
+			+button('Fing meetups')
+		.right.col-6 
