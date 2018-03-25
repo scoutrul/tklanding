@@ -1,8 +1,8 @@
 //- includes/main.jade
 include ./button.jade
 .main.container-fluid
-	section.container.d-flex.flex-row.flex-wrap.align-flex-start
-		.left.col-lg-5.col-md-5.col-sm-6
+	section.container.d-flex.flex-row.flex-wrap.align-flex-start.w-100
+		.description.col-lg-5.col-md-5.col-xs-4
 			h2.
 				Find sports meetups
 				nearby or create your
@@ -13,4 +13,7 @@ include ./button.jade
 				vicinity. Use in-app chat to communicate &
 				organize games.
 			+button_simple('Find meetups')
-		.right.col-lg-7.col-md-7.col-sm-6 123
+		.picture.col-lg-7.col-md-7
+			picture.screenshot
+				source(media="(max-width: 760px)" srcset="images/pic_1_1_min.png")
+				img(src="images/pic_1_1.png", alt="")

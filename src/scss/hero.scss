@@ -8,6 +8,7 @@
 	background-image: url('../images/bg_1_1.jpg');
 	background-attachment: fixed;
 	background-position: center;
+	z-index: 10;
 	.container {
 		display: flex;
 		align-items: center;
