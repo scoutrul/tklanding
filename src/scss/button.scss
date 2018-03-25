@@ -1,3 +1,4 @@
+@import 'vars.scss';
 .button {
 	min-width: 180px;
 	max-width: fit-content;
@@ -6,6 +7,9 @@
 	color: #fff;
 	box-shadow: 0 8px 16px rgba(17, 95, 254, 0.35);
 	min-height: 55px;
+	@media($XS) {
+		margin: auto
+	}
 	svg {
 		height: 35px;
 		fill: #fff;

@@ -1,15 +1,48 @@
 @import 'vars.scss';
-section {
-	h2 {
-		font-weight: 400;
-		color: $space_grey;
-		line-height: 100%;
-	}
-	h5 {
-		font-weight: 400;
-		margin: 50px 0;
-		max-width: 410px;
-		color: $grey;
-		line-height: 180%;
+
+.main {
+	display: flex;
+	flex-flow: column wrap;
+	min-height: 100vh;
+	height: 100%;
+	section {
+		padding: $hPadding 0;
+		display: flex;
+		flex-direction: column;
+		h2 {
+			font-weight: 400;
+			color: $space_grey;
+			line-height: 100%;
+		}
+		h5 {
+			font-weight: 400;
+			margin: 50px 0;
+			color: $grey;
+			line-height: 180%;
+		}
+		.left,
+		.right {
+			@media ($M) {
+				padding: 0 $wPadding 60px $wPadding;
+			}
+			@media ($XS) {
+				text-align: center;
+				padding: 0 0 60px !important;
+			}
+		}
+		.left {
+			padding: 150px $wPadding;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+			@media (max-width: 980px) {
+				padding: 0 $wPadding 60px $wPadding  !important;
+			}
+		}
+		.right {
+			background-image: url('../images/pic_1_1.png');
+			height: 100vh;
+			background-position: center;
+		}
 	}
 }

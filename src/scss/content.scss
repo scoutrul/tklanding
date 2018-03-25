@@ -3,26 +3,5 @@
 	margin: auto 0;
 	padding: 0;
 	@import 'hero.scss';
-	.main {
-		display: flex;
-		flex-flow: column wrap;
-		min-height: 100vh;
-		align-items: center;
-		height: 100%;
-		.container {
-			padding: $hPadding 0;
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			.left,.right {
-				padding: 0 $wPadding;
-				width: 440px;
-			}
-			.right {
-				background-image: url('../images/pic_1_1.png');
-				height: 100vh;
-				background-position: center;
-			}
-		}
-	}
+	@import 'section.scss';
 }
