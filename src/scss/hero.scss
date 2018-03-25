@@ -11,10 +11,10 @@
 	.container {
 		display: flex;
 		align-items: center;
+		min-height: 90vh;
 		flex-direction: column;
 		text-align: center;
 		align-self: center;
-		min-height: 90vh;
 
 		.header_1 {
 			line-height: 100%;
@@ -66,16 +66,32 @@
 				display: none !important;
 			}
 		}
-		.scroll {
+		.mouse_scroll {
 			display: flex;
+			align-items: center;
 			min-height: 85px;
 			margin: auto 0 0;
 			flex-flow: column wrap;
 			color: $blue;
 			font-size: 13px;
+
+			@keyframes mouse_scroll {
+				0% {
+					transform: translateY(0px);
+				}
+				100% {
+					transform: translateY(4px);
+					opacity: .5;
+					fill: #FFF
+				}
+			}
 			.icon {
 				height: 35px;
 				margin: 20px 0;
+				fill: $blue;
+				.roll {
+					animation: mouse_scroll 1.18s ease-in infinite;
+				}
 			}
 		}
 	}
