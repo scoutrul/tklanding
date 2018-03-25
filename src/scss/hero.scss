@@ -13,10 +13,11 @@
 	.container {
 		display: flex;
 		align-items: center;
-		min-height: 100vh;
+		min-height: 90vh;
 		flex-direction: column;
 		text-align: center;
 		align-self: center;
+		position: relative;
 
 		@media (min-width: 370px) and (min-height: 420px) {
 			padding-top: 120px;
@@ -29,7 +30,7 @@
 			text-transform: uppercase;
 			@media ($XL) {
 				max-width: 1000px;
-				padding-top: 120px;
+				padding-top: 80px;
 			}
 			@media (orientation: landscape) and (max-height: 570px) {
 				margin-top: 100px;
@@ -72,6 +73,7 @@
 			}
 		}
 		.button {
+			margin: 0 auto 40px;
 			@media (max-height: 470px) {
 				display: none !important;
 			}
@@ -87,11 +89,12 @@
 			@media ($L) {
 				margin: auto 0 60px;
 			}
-			@media (max-width: 700px) {
+			@media (max-width: 700px) and (max-height: 900px){
 				display: none;
 			}
 			@media ($XL) {
-				margin: auto;
+				position: absolute;
+				bottom: 0;
 			}
 
 			@keyframes mouse_scroll {
