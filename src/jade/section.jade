@@ -1,0 +1,11 @@
+//- includes/section.jade
+mixin section(title, description, button, pic1, pic2)
+	section.container.d-flex.flex-row.flex-wrap.align-flex-start.w-100
+		.description.col-lg-5.col-md-5.col-xs-4
+			h2= title
+			h5= description
+				
+			+button_simple(button)
+		.picture.col-lg-7.col-md-7
+			img(src=pic1, alt="").screenshot
+			img(src=pic2, alt="").screenshot2

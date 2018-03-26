@@ -1,52 +1,112 @@
 @import 'vars.scss';
-
 .main {
 	display: flex;
-	flex-flow: column wrap;
 	min-height: 100vh;
 	height: 100%;
+	flex-flow: column wrap;
+	overflow: hidden;
 	section {
-		padding: $hPadding 0;
 		display: flex;
+		overflow: hidden;
+		padding: $hPadding 0;
 		flex-direction: column;
+		border-bottom: 1px #ddd solid;
+
+		&:nth-of-type(2n) {
+			.description {
+				order: 2;
+				@media ($S) {
+					order: 1;
+				}
+			}
+			.picture {
+				order: 1;
+				transform: translateY(-130px);
+				.screenshot2 {
+					transform: translateX(-40%);
+					bottom: 10%;
+					@media ($S) {
+						bottom: 20%;
+						max-height: 200px;
+					}
+					@media ($XS) {
+						bottom: 20%;
+						max-height: 140px;
+					}
+				}
+			}
+		}
+		@media ($XL) {
+			&:nth-of-type(3) {
+				.picture .screenshot2 {
+					transform: translateX(-40%);
+				}
+			}
+			&:nth-of-type(4) {
+				.picture .screenshot {
+					transform: translateY(240px);
+				}
+				.picture .screenshot2 {
+					transform: translateX(-48%);
+					bottom: -10%;
+				}
+			}
+		}
 		h2 {
+			line-height: 100%;
 			font-weight: 400;
 			color: $space_grey;
-			line-height: 100%;
 		}
 		h5 {
-			font-weight: 400;
-			margin: 50px 0;
-			color: $grey;
 			line-height: 180%;
+			margin: 50px 0;
+			font-weight: 400;
+			color: $grey;
 		}
 		.description,
 		.picture {
-			margin-left: auto;
 			margin-right: auto;
+			margin-left: auto;
 			@media ($M) {
 				padding: 0 $wPadding 60px $wPadding;
 			}
 			@media ($XS) {
-				text-align: center;
 				padding: 0 0 60px !important;
+				text-align: center;
 			}
 		}
 		.description {
-			padding: 300px 20px 0 $wPadding;
 			max-width: 700px;
+			padding: 300px 20px 0 $wPadding;
 
 			@media (max-width: 560px) {
 				max-width: 400px;
 			}
 		}
 		.picture {
-			overflow: hidden;
+			transform: translateY(130px);
 			display: flex;
 			justify-content: center;
+			overflow: visible;
 			.screenshot {
-				img {
-					max-width: 100%;
+				@media ($S) {
+					max-height: 500px;
+				}
+				@media ($XS) {
+					max-height: 400px;
+				}
+			}
+			.screenshot2 {
+				position: absolute;
+				transform: translateX(40%);
+				bottom: 10%;
+				@media ($S) {
+					bottom: 20%;
+					max-height: 200px;
+				}
+				@media ($XS) {
+					bottom: 20%;
+					max-height: 140px;
 				}
 			}
 		}

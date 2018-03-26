@@ -1,19 +1,8 @@
 //- includes/main.jade
-include ./button.jade
+include section.jade
 .main.container-fluid
-	section.container.d-flex.flex-row.flex-wrap.align-flex-start.w-100
-		.description.col-lg-5.col-md-5.col-xs-4
-			h2.
-				Find sports meetups
-				nearby or create your
-				own
-
-			h5.
-				Connect with like-minded individuals in your
-				vicinity. Use in-app chat to communicate &
-				organize games.
-			+button_simple('Find meetups')
-		.picture.col-lg-7.col-md-7
-			picture.screenshot
-				source(media="(max-width: 760px)" srcset="images/pic_1_1_min.png")
-				img(src="images/pic_1_1.png", alt="")
+	+section('Find sports meetups nearby or create your own', 'Connect with like-minded individuals in your vicinity. Use in-app chat to communicate & organize games.', 'Find meetups', 'images/pic_1_1.png', 'images/pic_1_2.png')
+	+section('Find sports meetups nearby or create your own', 'Connect with like-minded individuals in your vicinity. Use in-app chat to communicate & organize games.', 'Find meetups', 'images/pic_2_1.png', 'images/pic_2_2.png')
+	+section('Find sports meetups nearby or create your own', 'Connect with like-minded individuals in your vicinity. Use in-app chat to communicate & organize games.', 'Find meetups', 'images/pic_3_1.png', 'images/pic_3_2.png')
+	+section('Find sports meetups nearby or create your own', 'Connect with like-minded individuals in your vicinity. Use in-app chat to communicate & organize games.', 'Find meetups', 'images/pic_4_1.png', 'images/pic_4_2.png')
+	+section('Find sports meetups nearby or create your own', 'Connect with like-minded individuals in your vicinity. Use in-app chat to communicate & organize games.', 'Find meetups', 'images/pic_5_1.png', 'images/pic_5_2.png')
