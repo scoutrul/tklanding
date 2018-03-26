@@ -1,10 +1,12 @@
 //- includes/header.jade
 include ./button.jade
-header.container-fluid.d-flex.flex-row.align-items-center
+header.container-fluid.d-flex.flex-row.align-items-center#header
 	.container.d-flex.flex-row.align-items-center.justify-content-between.header_items
 		.d-flex.w-100
-			img(src="images/icon_logo.svg").logo
+			a(href="#hero")
+				img(src="images/icon_logo.svg").logo
 			ul.header_nav
 				each link in header_nav
-						li= link.title
+						li
+							a(href=`#${link.id}`)= link.title
 		+button('Get app')

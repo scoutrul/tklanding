@@ -13,7 +13,7 @@ var concat = require('gulp-concat');
 
 var paths = {
 	sass: 'src/**/*.scss',
-	js: 'src/js/*.js',
+	js: 'src/js/script.js',
 	data: 'data.json',
 	jade: 'src/jade/index.jade'
 };
@@ -55,7 +55,7 @@ gulp.task('serve', [ 'sass', 'jade', 'js' ], function() {
 	});
 
 	gulp.watch(paths.sass, [ 'sass' ]).on('change', browserSync.reload);
-	gulp.watch(paths.js, [ 'js' ]).on('change', browserSync.reload);
+	gulp.watch(['dest/js/*.js', paths.js], [ 'js' ]).on('change', browserSync.reload);
 	gulp.watch('src/**/*.jade', [ 'jade' ]).on('change', browserSync.reload);
 	gulp.watch('dest/*.html', [ 'jade' ]).on('change', browserSync.reload);
 });

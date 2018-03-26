@@ -7,10 +7,26 @@
 	overflow: hidden;
 	section {
 		display: flex;
-		overflow: hidden;
 		padding: $hPadding 0;
+		overflow: hidden;
 		flex-direction: column;
 		border-bottom: 1px #ddd solid;
+		@media ($XL) {
+			&:nth-of-type(3) {
+				.picture .screenshot2 {
+					transform: translateX(-40%);
+				}
+			}
+			&:nth-of-type(4) {
+				.picture .screenshot {
+					transform: translateY(240px);
+				}
+				.picture .screenshot2 {
+					bottom: -10%;
+					transform: translateX(-48%);
+				}
+			}
+		}
 
 		&:nth-of-type(2n) {
 			.description {
@@ -23,8 +39,8 @@
 				order: 1;
 				transform: translateY(-130px);
 				.screenshot2 {
-					transform: translateX(-40%);
 					bottom: 10%;
+					transform: translateX(-40%);
 					@media ($S) {
 						bottom: 20%;
 						max-height: 200px;
@@ -33,22 +49,6 @@
 						bottom: 20%;
 						max-height: 140px;
 					}
-				}
-			}
-		}
-		@media ($XL) {
-			&:nth-of-type(3) {
-				.picture .screenshot2 {
-					transform: translateX(-40%);
-				}
-			}
-			&:nth-of-type(4) {
-				.picture .screenshot {
-					transform: translateY(240px);
-				}
-				.picture .screenshot2 {
-					transform: translateX(-48%);
-					bottom: -10%;
 				}
 			}
 		}
@@ -78,15 +78,16 @@
 		.description {
 			max-width: 700px;
 			padding: 300px 20px 0 $wPadding;
+			z-index: 10;
 
 			@media (max-width: 560px) {
 				max-width: 400px;
 			}
 		}
 		.picture {
-			transform: translateY(130px);
 			display: flex;
 			justify-content: center;
+			transform: translateY(130px);
 			overflow: visible;
 			.screenshot {
 				@media ($S) {
@@ -98,8 +99,8 @@
 			}
 			.screenshot2 {
 				position: absolute;
-				transform: translateX(40%);
 				bottom: 10%;
+				transform: translateX(40%);
 				@media ($S) {
 					bottom: 20%;
 					max-height: 200px;
