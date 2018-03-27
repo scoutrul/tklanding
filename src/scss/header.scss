@@ -20,7 +20,12 @@ header {
 			width: 65px;
 			height: 65px;
 		}
-		.header_nav {
+		.button {
+			@media ($M) {
+				margin: 0 0 0 auto;
+			}
+		}
+		#navbar {
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
@@ -35,15 +40,23 @@ header {
 				display: none;
 			}
 			li {
-				margin-right: 60px;
+				margin-right: 20px;
 				color: #fff;
-				font-size: 17px;
+				font-size: var(--h5-size);
 				letter-spacing: 0.5px;
 				font-weight: 300;
+				
+				@media ($XXL) {
+					margin-right: 60px;
+				}
 				a {
 					color: #fff;
 					transition: .2s ease;
-					&:hover, &.active {
+					&:focus {
+						color: #fff;
+					}
+					&:hover,
+					&.active {
 						color: $blue !important;
 					}
 				}
@@ -52,9 +65,9 @@ header {
 	}
 	&.black {
 		margin-top: 0px;
-		background: #FFF;
+		background: #fff;
 		.container {
-			.header_nav {
+			#navbar {
 				li a {
 					color: #000;
 				}

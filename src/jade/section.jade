@@ -3,7 +3,7 @@ mixin section(id, title, description, button, pic1, pic2)
 	section.container.d-flex.flex-row.flex-wrap.align-flex-start.w-100(id=id)
 		.description.col-lg-5.col-md-5.col-xs-4
 			h2= title
-			h5= description
+			p= description
 				
 			+button_simple(button)
 		.picture.col-lg-7.col-md-7

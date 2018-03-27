@@ -57,12 +57,14 @@
 			line-height: 100%;
 			font-weight: 400;
 			color: $space_grey;
+			font-size: var(--h2-size);
 		}
-		h5 {
+		p {
 			line-height: 180%;
 			margin: 50px 0;
 			font-weight: 400;
 			color: $grey;
+			font-size: var(--h4-size);
 		}
 		.description,
 		.picture {
