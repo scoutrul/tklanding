@@ -66,6 +66,7 @@ header {
 	&.black {
 		margin-top: 0px;
 		background: #fff;
+		transition: .2s ease-out;
 		.container {
 			#navbar {
 				li a {
