@@ -3,13 +3,14 @@ header {
 	position: fixed !important;
 	width: 100%;
 	min-height: 80px;
-	height: 80px;
+	min-height: 80px;
 	margin-top: 60px;
 	z-index: 11;
 	transition: margin .4s ease;
 	@media ($S) {
 		padding: 0 !important;
 		margin: 10px;
+		min-height: 120px;
 	}
 	.container {
 		@media ($M) {
