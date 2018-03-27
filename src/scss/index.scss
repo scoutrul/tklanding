@@ -37,6 +37,12 @@
 			padding: 0;
 			.container {
 				padding: 0 var(--hPadding);
+				overflow: visible;
+			}
+		}
+		@media ($L) {
+			.container {
+				overflow: hidden;
 			}
 		}
 	}

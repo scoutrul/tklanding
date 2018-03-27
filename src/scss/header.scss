@@ -3,19 +3,28 @@ header {
 	position: fixed !important;
 	width: 100%;
 	min-height: 80px;
-	min-height: 80px;
 	margin-top: 60px;
 	z-index: 11;
-	transition: margin .4s ease;
+	background: transparent; 
+	transition: .4s ease-out;
 	@media ($S) {
+		min-height: 80px !important;
 		padding: 0 !important;
 		margin: 10px;
-
+	}
+	@media ($M) {
+		background: transparent !important;
 	}
 	.container {
 		@media ($M) {
 			width: 100%;
 			padding: 10px !important;
+		}
+		nav {
+			padding: 0 0 10px 0;
+			@media ($L) {
+				padding: 20px 0;
+			}
 		}
 		.logo {
 			width: 55px;
@@ -46,7 +55,7 @@ header {
 				font-size: var(--h5-size);
 				letter-spacing: 0.5px;
 				font-weight: 300;
-				
+
 				@media ($XXL) {
 					margin-right: 60px;
 				}
@@ -65,10 +74,9 @@ header {
 		}
 	}
 	&.black {
+		min-height: 120px;
 		margin-top: 0px;
 		background: #fff;
-		transition: .2s ease-out;
-		min-height: 120px;
 		.container {
 			#navbar {
 				li a {
