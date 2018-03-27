@@ -3,7 +3,6 @@
 	display: flex;
 	justify-content: center;
 	min-height: 100vh;
-	height: 100%;
 	padding: var(--hPadding) 0;
 	background-size: cover;
 	background-image: url('../images/bg_1_1.jpg');
@@ -88,6 +87,11 @@
 			color: $blue;
 			font-size: var(--h6-size);
 			flex-flow: column nowrap;
+			opacity:1;
+			transition: .3s ease;
+			&.hide {
+				opacity: 0;
+			}
 
 			@media ($L) {
 				margin: auto 0 60px;

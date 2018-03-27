@@ -26,15 +26,15 @@ $(function() {
 	var hideScroll = function() {
 		var scrollTop = window.pageYOffset;
 		if (scrollTop > 100) {
-			$('.mouse_scroll').hide()
+			$('.mouse_scroll').addClass('hide');
 		} else {
-			$('.mouse_scroll').show();
+			$('.mouse_scroll').removeClass('hide');
 		}
-	}
+	};
+	hideScroll();
 
 	window.addEventListener('scroll', function() {
 		toggleBlack();
 		hideScroll();
 	});
-
 });
