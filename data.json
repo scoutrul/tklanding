@@ -24,11 +24,11 @@
         "footer_nav": [
                 {
                         "title": "Privacy Policy",
-                        "id": "Privacy"
+                        "id": "privacypolicy"
                 },
                 {
                         "title": "Terms & Conditions",
-                        "id": "Terms"
+                        "id": "termsofservice"
                 }
         ]
 }

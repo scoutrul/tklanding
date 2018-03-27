@@ -50,6 +50,10 @@ footer {
 				font-size: var(--h5-size);
 				a {
 					color: #115ffe;
+					&:hover {
+						color: #FFF;
+						transition: .3s ease;
+					}
 				}
 			}
 		}

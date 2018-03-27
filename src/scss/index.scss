@@ -25,30 +25,36 @@
 #app {
 	position: relative;
 	min-height: 100vh;
-	font-family: 'Graphik';
+	line-height: 100%;
+	font-family: 'Graphik', sans-serif;
 	-webkit-font-display: block;
 	font-size: 12px;
 	font-weight: 400;
 	color: #9f9f9f;
-	line-height: 100%;
 
 	.container-fluid {
 		@media ($XL) {
 			padding: 0;
 			.container {
 				padding: 0 var(--hPadding);
-				overflow: visible;
-			}
-		}
-		@media ($L) {
-			.container {
-				overflow: hidden;
 			}
 		}
 	}
 
 	a {
 		text-decoration: none;
+	}
+
+	#sub {
+		color: #000 !important;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			padding: 1em 0;
+		}
 	}
 }
 
