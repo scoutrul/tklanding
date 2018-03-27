@@ -8,4 +8,5 @@ footer.container-fluid
 		
 		ul.footer_nav
 			each link in footer_nav
-					a(href=`#${link.id}`)= link.title
+					li 
+						a(href=`#${link.id}`)= link.title
