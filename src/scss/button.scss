@@ -1,7 +1,6 @@
 @import 'vars.scss';
 .button {
-	min-width: 180px;
-	max-width: fit-content;
+	width: 180px;
 	border-radius: 30px;
 	background-color: $blue;
 	color: #fff;
