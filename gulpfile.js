@@ -15,7 +15,7 @@ var paths = {
 	sass: 'src/**/*.scss',
 	js: 'src/js/script.js',
 	data: 'data.json',
-	jade: ['src/jade/index.jade','src/jade/privacypolicy.jade']
+	jade: ['src/jade/index.jade','src/jade/privacypolicy.jade','src/jade/termsofservice.jade']
 };
 
 var processors = [require('postcss-focus'), cssnano ];

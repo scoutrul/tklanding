@@ -46,6 +46,7 @@
 	}
 
 	#sub {
+		padding-bottom: 300px;
 		color: #000 !important;
 		h1,
 		h2,
@@ -123,11 +124,13 @@ h1 {
 h2 {
 	font-size: var(--h2-size);
 	font-weight: 500;
+	line-height: 100%;
 }
 
 h3 {
 	font-size: var(--h3-size);
 	font-weight: 500;
+	line-height: 100%;
 }
 
 h4 {
@@ -139,10 +142,12 @@ h4 {
 h5 {
 	font-size: var(--h5-size);
 	font-weight: 500;
+	line-height: 100%;
 }
 h6 {
 	font-size: var(--h6-size);
 	font-weight: 600;
+	line-height: 100%;
 }
 
 @import 'button.scss';
