@@ -23,6 +23,7 @@
 }
 
 #app {
+	position: relative;
 	min-height: 100vh;
 	font-family: 'Graphik';
 	-webkit-font-display: block;
@@ -38,8 +39,11 @@
 			}
 		}
 	}
-}
 
+	a {
+		text-decoration: none;
+	}
+}
 
 //Headers
 @media ($XL) {
@@ -129,7 +133,6 @@ h6 {
 	font-size: var(--h6-size);
 	font-weight: 600;
 }
-
 @import 'button.scss';
 @import 'header.scss';
 @import 'content.scss';

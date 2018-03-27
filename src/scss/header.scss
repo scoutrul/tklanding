@@ -6,7 +6,7 @@ header {
 	height: 80px;
 	margin-top: 60px;
 	z-index: 11;
-	transition: .4s ease;
+	transition: margin .4s ease;
 	@media ($S) {
 		padding: 0 !important;
 		margin: 10px;
@@ -42,16 +42,17 @@ header {
 				font-weight: 300;
 				a {
 					color: #fff;
-					transition: .8s ease;
-					&:hover {
-						color: #fff;
+					transition: .2s ease;
+					&:hover, &.active {
+						color: $blue !important;
 					}
 				}
 			}
 		}
 	}
 	&.black {
-		margin-top: 20px;
+		margin-top: 0px;
+		background: #FFF;
 		.container {
 			.header_nav {
 				li a {

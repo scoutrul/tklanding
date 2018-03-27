@@ -2,11 +2,11 @@
 include ./button.jade
 header.container-fluid.d-flex.flex-row.align-items-center#header
 	.container.d-flex.flex-row.align-items-center.justify-content-between.header_items
-		.d-flex.w-100
+		nav.d-flex.w-100
 			a(href="#hero")
 				img(src="images/icon_logo.svg").logo
-			ul.header_nav
+			ul.header_nav.nav#navbar
 				each link in header_nav
-						li
-							a(href=`#${link.id}`)= link.title
+						li.nav-item
+							a.nav-link(href=`#${link.id}`)= link.title
 		+button('Get app')

@@ -9,11 +9,11 @@ $(function() {
 	});
 
 	var toggleBlack = function() {
-		var hero = document.getElementById('hero');
+		var hero = document.querySelector('#hero');
 		var heroHeight = hero.getBoundingClientRect().height;
 		var scrollTop = window.pageYOffset;
-		var ofset = 200;
-		var header = document.getElementById('header');
+		var ofset = -10;
+		var header = document.querySelector('#header');
 
 		if (scrollTop > ofset + heroHeight) {
 			header.classList.add('black');
@@ -26,4 +26,5 @@ $(function() {
 	window.addEventListener('scroll', function() {
 		toggleBlack();
 	});
+
 });
