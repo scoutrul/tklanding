@@ -10,7 +10,7 @@ header {
 	@media ($S) {
 		padding: 0 !important;
 		margin: 10px;
-		min-height: 120px;
+
 	}
 	.container {
 		@media ($M) {
@@ -18,8 +18,8 @@ header {
 			padding: 10px !important;
 		}
 		.logo {
-			width: 65px;
-			height: 65px;
+			width: 55px;
+			height: 55px;
 		}
 		.button {
 			@media ($M) {
@@ -68,6 +68,7 @@ header {
 		margin-top: 0px;
 		background: #fff;
 		transition: .2s ease-out;
+		min-height: 120px;
 		.container {
 			#navbar {
 				li a {

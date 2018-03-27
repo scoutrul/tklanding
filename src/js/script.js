@@ -12,7 +12,7 @@ $(function() {
 		var hero = document.querySelector('#hero');
 		var heroHeight = hero.getBoundingClientRect().height;
 		var scrollTop = window.pageYOffset;
-		var ofset = -10;
+		var ofset = -80;
 		var header = document.querySelector('#header');
 
 		if (scrollTop > ofset + heroHeight) {

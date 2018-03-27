@@ -23,19 +23,11 @@
         ],
         "footer_nav": [
                 {
-                        "title": "Support",
-                        "id": "Support"
-                },
-                {
-                        "title": "Help",
-                        "id": "Help"
-                },
-                {
                         "title": "Privacy Policy",
                         "id": "Privacy"
                 },
                 {
-                        "title": "Terms & Condition",
+                        "title": "Terms & Conditions",
                         "id": "Terms"
                 }
         ]

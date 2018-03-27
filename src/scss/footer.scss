@@ -41,14 +41,16 @@ footer {
 			margin-bottom: 0;
 			list-style: none;
 			flex-flow: row wrap;
-			@media(max-width: 500px) {
+			@media (max-width: 500px) {
 				flex-flow: column wrap;
 			}
 			li {
-				margin: auto;
 				padding: 10px;
-				color: #115ffe;
+				margin: auto;
 				font-size: var(--h5-size);
+				a {
+					color: #115ffe;
+				}
 			}
 		}
 	}
