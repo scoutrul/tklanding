@@ -10,7 +10,7 @@
 		padding: $hPadding 0;
 		flex-direction: column;
 		background: #fff;
-		@media ($L){
+		@media ($S){
 			padding: $hPadding/2 0;
 		}
 		@media ($M){
@@ -55,15 +55,17 @@
 			}
 			.picture {
 				order: 1;
+				@media ($L){
+					transform: translateY(40px);
+				}
 				transform: translateY(-130px);
 				.screenshot2 {
 					bottom: 10%;
 					transform: translateX(-40%);
 					@media ($S){
-						transform: translateY(40px);
-
 						bottom: 20%;
 						max-height: 200px;
+						transform: translateY(40px);
 						order:1;
 					}
 					@media ($XS) {
@@ -128,7 +130,9 @@
 			img {
 				transform: translateY(130px);
 				@media ($M) {
-					transform: translate(0, 40px) !important;
+					&.screenshot {
+						transform: translate(0, 40px) !important;
+					}
 				}
 			}
 			.screenshot {
