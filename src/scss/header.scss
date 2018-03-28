@@ -26,6 +26,9 @@ header {
 		transition: .2s ease-out 0s;
 		background-color: #FFF;
 		transform: translateY(-180px);
+		@media ($M){
+			display: none;
+		}
 	}
 	.container {
 		@media ($M) {
