@@ -20,7 +20,7 @@
 		align-self: center;
 
 		@media (min-width: 370px) and (min-height: 420px) {
-			padding-top: 120px;
+			justify-content: center;
 		}
 
 		.header_1 {
@@ -31,7 +31,6 @@
 			font-size: var(--h1-size);
 			@media ($XL) {
 				max-width: 1000px;
-				padding-top: 80px;
 			}
 			@media (orientation: landscape) and (max-height: 570px) {
 				margin-top: 100px;
