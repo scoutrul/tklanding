@@ -11,7 +11,7 @@
 		flex-direction: column;
 		background: #fff;
 		@media ($S){
-			padding: $hPadding/2 0;
+			padding: 60PX 0;
 		}
 		@media ($M){
 			.picture .screenshot,
@@ -100,7 +100,7 @@
 				padding: 0 $wPadding;
 			}
 			@media ($XS) {
-				padding: 0 0 60px !important;
+				padding: 0 0 40px !important;
 				text-align: center;
 			}
 			@media ($S) {

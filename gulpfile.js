@@ -10,6 +10,7 @@ var notify = require('gulp-notify');
 var autoprefixer = require('gulp-autoprefixer');
 var cssnano = require('cssnano');
 var concat = require('gulp-concat');
+var cleanCss = require('gulp-clean-css');
 
 var paths = {
 	sass: 'src/**/*.scss',
@@ -25,8 +26,12 @@ gulp.task('sass', function() {
 			.src('./src/scss/index.scss')
 			.pipe(plumber({ errorHandler: notify.onError('Error: sass') }))
 			.pipe(sass())
+			.pipe(autoprefixer({
+				browsers: ['last 2 versions']
+			}))
 			// .pipe(concat('styles.css'))
 			.pipe(postcss(processors))
+			.pipe(cleanCss())
 			.pipe(gulp.dest('dest/css'))
 			.pipe(browserSync.stream()) );
 });
