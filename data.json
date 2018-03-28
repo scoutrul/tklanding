@@ -13,12 +13,12 @@
                         "id": "Create"
                 },
                 {
-                        "title": "Get rewards",
-                        "id": "Get"
+                        "title": "Earn rewards",
+                        "id": "Rewards"
                 },
                 {
-                        "title": "Enrich experience",
-                        "id": "Enrich"
+                        "title": "Collect memories",
+                        "id": "Collect"
                 }
         ],
         "footer_nav": [

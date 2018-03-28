@@ -27,9 +27,7 @@
 		@media ($XL) {
 	
 			&:nth-of-type(3) {
-				.picture .screenshot2 {
-					transform: translateX(-40%);
-				}
+
 			}
 			&:nth-of-type(4) {
 				.picture .screenshot {
@@ -71,7 +69,7 @@
 					@media ($S){
 						bottom: 20%;
 						max-height: 200px;
-						transform: translateY(40px);
+						// transform: translateY(40px);
 						order:1;
 					}
 					@media ($XS) {
@@ -99,7 +97,7 @@
 			margin-right: auto;
 			margin-left: auto;
 			@media ($M) {
-				padding: 0 $wPadding 60px $wPadding;
+				padding: 0 $wPadding;
 			}
 			@media ($XS) {
 				padding: 0 0 60px !important;
