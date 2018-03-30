@@ -46,15 +46,21 @@
 	}
 
 	#sub {
-		padding-bottom: 300px;
+		padding-bottom: 100px;
 		color: #000 !important;
+		word-wrap: break-word;
+		@media($XL){
+			transform: scale(.8);
+			transform-origin: top;
+		}
 		h1,
 		h2,
 		h3,
 		h4,
 		h5,
 		h6 {
-			padding: 1em 0;
+			padding: .8em 0;
+			font-weight: 400;
 		}
 	}
 }
