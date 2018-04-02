@@ -102,7 +102,7 @@ header {
 		margin-top: 0px;
 		transition: .2s ease-out 0s;
 		&:before {
-			transition: .2s ease-out 0s;
+			transition: .2s ease-out .2s;
 			transform: translateY(0);
 		}
 		.container {

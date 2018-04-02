@@ -7,39 +7,19 @@
 	overflow: hidden;
 	section {
 		display: flex;
+		flex-wrap: wrap;
 		padding: $hPadding 0;
 		flex-direction: column;
 		background: #fff;
-		@media ($S){
+		@media ($S) {
 			padding: 60PX 0;
-		}
-		@media ($M){
-			.picture .screenshot,
-			.picture .screenshot2 {
-			transform: translate(0,0);
-			}
 		}
 
 		@media (min-width: 1266px) and (max-width: 1466px) and (min-height: 668px) and (max-height: 868px) {
 			max-height: 100vh;
 			overflow: hidden;
 		}
-		@media ($XL) {
-	
-			&:nth-of-type(3) {
 
-			}
-			&:nth-of-type(4) {
-				.picture .screenshot {
-					transform: translateY(240px);
-
-				}
-				.picture .screenshot2 {
-					bottom: -10%;
-					transform: translateX(-48%);
-				}
-			}
-		}
 		&:after {
 			position: absolute;
 			bottom: 0;
@@ -59,24 +39,6 @@
 			}
 			.picture {
 				order: 1;
-				transform: translateY(-130px);
-				@media ($L){
-					transform: translateY(40px);
-				}
-				.screenshot2 {
-					bottom: 10%;
-					transform: translateX(-40%);
-					@media ($S){
-						bottom: 20%;
-						max-height: 200px;
-						// transform: translateY(40px);
-						order:1;
-					}
-					@media ($XS) {
-						bottom: 20%;
-						max-height: 140px;
-					}
-				}
 			}
 		}
 		h2 {
@@ -103,10 +65,6 @@
 				padding: 0 0 40px !important;
 				text-align: center;
 			}
-			@media ($S) {
-				transform: translate(0) !important;
-			}
-
 		}
 		.description {
 			max-width: 700px;
@@ -118,7 +76,7 @@
 				max-width: 400px;
 			}
 
-			@media ($L){
+			@media ($L) {
 				padding: 0;
 				text-align: center;
 				.button {
@@ -130,35 +88,12 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			overflow: visible;
-			img {
-				transform: translateY(130px);
-				@media ($M) {
-					&.screenshot {
-						transform: translate(0, 40px) !important;
-					}
-				}
+			max-height: 1100px;
+			@media($M){
+				max-height: 700px;
 			}
 			.screenshot {
-				@media ($S) {
-					max-width: 400px;
-				}
-				@media ($XS) {
-					max-width: 300px;
-				}
-			}
-			.screenshot2 {
-				position: absolute;
-				bottom: 10%;
-				transform: translateX(40%);
-				@media ($S) {
-					bottom: 20%;
-					max-height: 200px;
-				}
-				@media ($XS) {
-					bottom: 20%;
-					max-height: 140px;
-				}
+				max-width: 100%;
 			}
 		}
 	}
