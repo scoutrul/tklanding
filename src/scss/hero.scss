@@ -27,7 +27,7 @@
 			line-height: 100%;
 			margin: auto 0 0;
 			color: $white;
-			text-transform: uppercase;
+			// text-transform: uppercase;
 			font-size: var(--h1-size);
 			@media ($XL) {
 				max-width: 1000px;
@@ -59,7 +59,7 @@
 					width: 102%;
 					height: 40%;
 					content: '';
-					background: #115ffe;
+					background: $blue;
 				}
 			}
 		}
@@ -87,7 +87,7 @@
 			font-size: var(--h6-size);
 			flex-flow: column nowrap;
 			opacity:1;
-			transition: .3s ease;
+			transition: .7s ease;
 			&.hide {
 				opacity: 0;
 			}

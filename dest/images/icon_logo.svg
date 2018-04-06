@@ -1,13 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_3__x28_копия_x29_"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64"
-	 style="enable-background:new 0 0 64 64;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#115FFE;}
-	.st1{fill:#FFFFFF;}
-</style>
-<circle class="st0" cx="32" cy="32" r="32"/>
-<polygon class="st1" points="45.5,20.2 36.8,20.2 27.2,20.2 18.5,20.2 18.5,29.7 27.2,29.7 27.2,47.6 36.8,47.6 36.8,29.7 
-	45.5,29.7 "/>
+<svg width="167" height="39" viewBox="0 0 167 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon_logo 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-419 -223)">
+<g id="icon_logo 2">
+<g id="Canvas">
+<g id="Group 3">
+<g id="icon logo (1)">
+<g id="Group">
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(462.735 236)" fill="#007BFF"/>
+</g>
+</g>
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(573.035 235.9)" fill="#007BFF"/>
+</g>
+</g>
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(500.435 236)" fill="#007BFF"/>
+</g>
+</g>
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path3_fill" transform="translate(516.435 236)" fill="#007BFF"/>
+</g>
+</g>
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path4_fill" transform="translate(530.335 236)" fill="#007BFF"/>
+</g>
+</g>
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path5_fill" transform="translate(484.935 235.9)" fill="#007BFF"/>
+</g>
+</g>
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path6_fill" transform="translate(542.735 235.9)" fill="#007BFF"/>
+</g>
+</g>
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path7_fill" transform="translate(473.335 236)" fill="#007BFF"/>
+</g>
+</g>
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path8_fill" transform="translate(558.435 236.1)" fill="#007BFF"/>
+</g>
+</g>
+</g>
+</g>
+<g id="#1">
+<g id="Vector">
+<g id="Vector">
+<use xlink:href="#path9_fill" transform="translate(419 223)" fill="#007BFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 1 -9.74633e-15L -9.74633e-15 3L 3.8 3L 0.799999 12.5L 3.2 12.5C 3.9 12.5 4.4 12 4.6 11.4L 7.3 3L 11.1 3L 12.1 -9.74633e-15L 1 -9.74633e-15Z"/>
+<path id="path1_fill" d="M 1 0.0999984L -1.91324e-13 3.1L 3.79998 3.1L 0.799988 12.6L 3.29998 12.6C 3.99998 12.6 4.49999 12.2 4.69999 11.5L 7.39999 3L 11.2 3L 12.2 9.74633e-15L 1 0.0999984Z"/>
+<path id="path2_fill" d="M 13.7 -9.74633e-15L 9.1 4.9L 7.7 -9.74633e-15L 4 -9.74633e-15L 0 12.5L 2.4 12.5C 3.1 12.5 3.6 12.1 3.8 11.4L 5.8 5.3L 7.4 10.2L 7.5 10.2L 12.4 5.3L 10.1 12.5L 13.5 12.5L 17.5 -9.74633e-15L 13.7 -9.74633e-15Z"/>
+<path id="path3_fill" d="M 16.1 -9.74633e-15L 11.9 -9.74633e-15L 5.9 5.1L 7.5 -9.74633e-15L 4 -9.74633e-15L 4.54981e-22 12.5L 2.5 12.5C 3.2 12.5 3.7 12 3.9 11.4L 4.6 9.3L 6.3 7.9L 8 12.6L 12.2 12.6L 9.5 5.4L 16.1 -9.74633e-15Z"/>
+<path id="path4_fill" d="M 13.7 1.3C 13.1 0.500001 11.9 -9.74633e-15 10 -9.74633e-15L 4 -9.74633e-15L -4.78311e-14 12.5L 2.5 12.5C 3.2 12.5 3.7 12 3.9 11.4L 4.8 8.7L 6.4 8.7L 7.7 12.5L 11.7 12.5L 10.1 8.1C 11.9 7.4 13.3 6.2 14 4.2C 14.3 3.1 14.2 2.1 13.7 1.3ZM 10.3 4.5C 10 5.5 9.1 6 7.9 6L 5.6 6L 6.6 3L 8.9 3C 10 3 10.6 3.5 10.3 4.5Z"/>
+<path id="path5_fill" d="M 12.9 9.74633e-15L 9.5 9.74633e-15L 0 12.6L 3 12.6C 3.6 12.6 3.9 12.3 4.3 11.8L 5.4 10.4L 10.3 10.4L 10.5 12.6L 14.3 12.6L 12.9 9.74633e-15ZM 7.3 7.7L 9.8 4.2L 10 7.7L 7.3 7.7Z"/>
+<path id="path6_fill" d="M 12.9 9.74633e-15L 9.5 9.74633e-15L -9.56622e-14 12.6L 3 12.6C 3.7 12.6 4 12.3 4.4 11.6L 4.5 11.5L 5.30001 10.3L 10.2 10.3L 10.4 12.5L 14.2 12.5L 12.9 9.74633e-15ZM 7.30001 7.7L 9.80001 4.2L 10 7.7L 7.30001 7.7Z"/>
+<path id="path7_fill" d="M 5 7.6L 8.4 7.6C 9.1 7.6 9.6 7.1 9.9 6.5L 10.4 4.9L 5.9 4.9L 6.5 3L 13.2 3L 14.1 -9.74633e-15L 4 -9.74633e-15L -4.78311e-14 12.5L 10.3 12.5L 11.2 9.5L 4.4 9.5L 5 7.6Z"/>
+<path id="path8_fill" d="M 8.10001 8C 8.80001 8 9.30001 7.6 9.60001 6.9L 10.2 5.1L 5.8 5.1L 6.5 3L 13.2 3L 14.2 1.19578e-14L 4 1.19578e-14L -7.33991e-22 12.5L 3.5 12.5L 4.89999 8.1L 8.10001 8Z"/>
+<path id="path9_fill" d="M 33.8749 15.1212L 22.3858 15.1212L 29.5149 1.40662C 30.104 0.293046 29.456 0.0586093 29.0435 0L 13.6658 0C 12.1928 0 11.6625 0.879139 11.5447 1.11358L 11.5447 1.17219L 0.114445 24.2642C -0.00339174 24.4988 -0.356905 25.495 1.29282 25.495L 8.06847 25.495L 2.64796 37.3927C 1.29282 40.3817 4.17984 38.3305 4.59227 38.0959L 34.1694 16.7036C 34.6409 16.352 35.0533 16.0589 34.9944 15.5901C 34.9354 15.1798 33.8749 15.1212 33.8749 15.1212Z"/>
+</defs>
 </svg>

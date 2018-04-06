@@ -35,6 +35,9 @@ header {
 			width: 100%;
 			padding: 10px !important;
 		}
+		.button {
+			flex: 0 0 auto;
+		}
 		nav {
 			padding: 0 0 10px 0;
 			@media ($L) {
@@ -42,8 +45,8 @@ header {
 			}
 		}
 		.logo {
-			width: 55px;
-			height: 55px;
+			min-width: 115px;
+			max-height: 55px;
 		}
 		.button {
 			@media ($M) {
@@ -61,16 +64,22 @@ header {
 			list-style: none;
 			text-align: right;
 			white-space: nowrap;
+			@media ($L) {
+				padding-left: 20px;
+			}
 			@media ($M) {
 				display: none;
 			}
-			li {
+			li.nav-item {
 				margin-right: 20px;
 				color: #fff;
 				font-size: var(--h5-size);
 				letter-spacing: 0.5px;
 				font-weight: 300;
 
+				@media ($L) {
+					margin-right: 0px;
+				}
 				@media ($XXL) {
 					margin-right: 60px;
 				}
@@ -93,7 +102,7 @@ header {
 		margin-top: 0px;
 		transition: .2s ease-out 0s;
 		&:before {
-			transition: .2s ease-out 0s;
+			transition: .2s ease-out .2s;
 			transform: translateY(0);
 		}
 		.container {

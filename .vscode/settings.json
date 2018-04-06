@@ -2,7 +2,7 @@
     "sublimeTextKeymap.promptV3Features": true,
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "auto-close-tag.enableAutoCloseTag": true,
     "javascript.implicitProjectConfig.experimentalDecorators": true,
     "workbench.iconTheme": "vscode-icons",
