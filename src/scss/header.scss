@@ -36,7 +36,7 @@ header {
 			padding: 10px !important;
 		}
 		.button {
-			flex: 0 0 auto;
+			flex: 0 1 auto;
 		}
 		nav {
 			padding: 0 0 10px 0;
@@ -45,8 +45,17 @@ header {
 			}
 		}
 		.logo {
-			min-width: 115px;
-			max-height: 55px;
+			@media(max-width: 400px){
+				overflow: hidden;
+				min-width: 40px;
+				width: 40px;
+				margin: 0 10px;
+			}
+			img {
+				width: 100%;
+				min-width: 115px;
+				max-height: 55px;
+			}
 		}
 		.button {
 			@media ($M) {
