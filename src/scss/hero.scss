@@ -75,6 +75,9 @@
 			@media ($S) {
 				margin: 30px 0;
 			}
+			@media($L){
+				margin: auto;
+			}
 		}
 		.button {
 			margin: 0 auto 40px;
