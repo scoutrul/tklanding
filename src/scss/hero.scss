@@ -2,7 +2,8 @@
 .hero {
 	display: flex;
 	justify-content: center;
-	min-height: 100vh;
+	height: 100%;
+	max-height: 100vh;
 	padding: var(--hPadding) 0;
 	background-size: cover;
 	background-image: url('../images/bg_1_1.jpg');
@@ -75,9 +76,6 @@
 			@media ($S) {
 				margin: 30px 0;
 			}
-			@media($L){
-				margin: auto;
-			}
 		}
 		.button {
 			margin: 0 auto 40px;
@@ -101,7 +99,7 @@
 			@media ($M) {
 				margin: auto 0 60px;
 			}
-			@media (max-width: 700px) and (max-height: 900px) {
+			@media (max-width: 700px) and (max-height: 1025px) {
 				display: none;
 			}
 			@media ($XL) {
