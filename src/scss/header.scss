@@ -43,6 +43,9 @@ header {
 			@media ($L) {
 				padding: 25px 0;
 			}
+			@media ($XS) {
+				padding: 0;
+			}
 		}
 		.logo {
 			@media(max-width: 400px){
