@@ -1,6 +1,7 @@
 //- includes/section.jade
 mixin section(id, title, description, button, pic1)
-	section.container.d-flex.flex-row.flex-wrap.align-flex-start(id=id)
+	.anchor(id=id)
+	section.container.d-flex.flex-row.flex-wrap.align-flex-start
 		.description.col-xl-4.col-lg-5.col-md-5.col-xs-4
 			h2= title
 			p= description
