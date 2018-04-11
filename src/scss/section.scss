@@ -16,8 +16,11 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 		background: #fff;
+		@media ($M) {
+			padding: 60px 0 40px 0;
+		}
 		@media ($S) {
-			padding: 60PX 0;
+			padding: 60px 0 10px 0;
 		}
 
 		@media (min-width: 1266px) and (max-width: 1466px) and (min-height: 668px) and (max-height: 868px) {
@@ -68,6 +71,7 @@
 			}
 			@media ($XS) {
 				padding: 0 0 40px !important;
+				padding-bottom: 0 !important;
 				text-align: center;
 			}
 		}

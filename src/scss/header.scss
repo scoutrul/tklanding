@@ -98,12 +98,14 @@ header {
 				a {
 					color: #fff;
 					transition: .3s ease;
-					&:focus {
-						color: $blue ;
-					}
-					&:hover,
+					// &:active {
+					// 	color: $blue;
+					// }
+					// &:hover{
+					// 	color: $blue;
+					// }
 					&.active {
-						color: $blue !important;
+						color: $blue;
 					}
 				}
 			}
