@@ -32,15 +32,6 @@
 	font-weight: 400;
 	color: #9f9f9f;
 
-	.container-fluid {
-		@media ($XL) {
-			padding: 0;
-			.container {
-				padding: 0 var(--hPadding);
-			}
-		}
-	}
-
 	a {
 		text-decoration: none;
 	}
